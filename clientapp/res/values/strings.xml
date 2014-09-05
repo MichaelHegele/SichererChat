@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WI - Messenger</string>
+    <string name="action_settings">Logout</string>
+    <string name="bSend">Senden</string>
+    <string name="SendText">Bitte Nachricht eingeben:</string>
+    <string name="LoginText">Bitte Username und Passwort eingeben:</string>
+    <string name="bLogin">Login</string>
+    <string name="bRegister">Neu Registrieren</string>
+	<string name="store_pass">WWI2012a4</string>
+
+</resources>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.clientapp.Appchat" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SendText"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cMessage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:text="@string/bSend" />
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"        
+        android:background="#FFFFFF">
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="12dp"
+                
+        <TextView android:id="@+id/cReader"
+            android:layout_height="fill_parent" android:layout_width="fill_parent"
+            android:paddingBottom="8dip" android:background="#ffffff"
+            android:textColor="#000000" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/cMessage"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/scroller"
+        android:layout_below="@+id/scroller"
+        android:layout_marginTop="57dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bSend"
+        android:layout_alignLeft="@+id/bSend"
+        android:layout_alignRight="@+id/bSend"
+        android:text="Update" />
+
+</RelativeLayout>
